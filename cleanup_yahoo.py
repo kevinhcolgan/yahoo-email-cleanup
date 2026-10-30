@@ -11,7 +11,7 @@ load_dotenv()
 
 # Configuration
 IMAP_SERVER = 'imap.mail.yahoo.com'
-EMAIL = 'kcolgan@yahoo.com'
+EMAIL = os.getenv('YAHOO_MAIL_ACCOUNT')
 APP_PASSWORD = os.getenv('YAHOO_APP_PASSWORD')
 CSV_FILE = 'senders_to_delete.csv'
 DRY_RUN = False  # Set to False to actually delete
