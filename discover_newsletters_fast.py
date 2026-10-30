@@ -11,7 +11,7 @@ load_dotenv()
 
 # Configuration
 IMAP_SERVER = 'imap.mail.yahoo.com'
-EMAIL = 'kcolgan@yahoo.com'
+EMAIL = os.getenv('YAHOO_MAIL_ACCOUNT')
 APP_PASSWORD = os.getenv('YAHOO_APP_PASSWORD')
 OUTPUT_FILE = 'discovered_newsletters.csv'
 DAYS_BACK = 90  # Scan last 90 days for speed
