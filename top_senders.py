@@ -9,7 +9,7 @@ load_dotenv()
 
 # Configuration
 IMAP_SERVER = 'imap.mail.yahoo.com'
-EMAIL = 'kcolgan@yahoo.com'
+EMAIL = os.getenv('YAHOO_MAIL_ACCOUNT')
 APP_PASSWORD = os.getenv('YAHOO_APP_PASSWORD')
 OUTPUT_FILE = 'top_senders.csv'
 
